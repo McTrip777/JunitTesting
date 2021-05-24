@@ -46,10 +46,20 @@ public class JunitExampleTest {
 	}
 	
 	@Test
-	public void blackJackTest() {
+	public void blackJackTest1() {
 		assertEquals(20, bj.play(20, 20));
+	}
+	@Test
+	public void blackJackTest2() {		
 		assertEquals(0, bj.play(23, 22));
-		assertEquals(21, bj.play(15, 21));
+	}
+	@Test
+	public void blackJackTest3() {
+		assertEquals(15, bj.play(15, 22));
+	}
+	@Test
+	public void blackJackTest4() {
+		assertEquals(12, bj.play(22, 12));
 	}
 	
 	@AfterAll
